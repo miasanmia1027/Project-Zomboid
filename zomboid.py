@@ -27,13 +27,14 @@ import time
 
 #---------------------------------------------------------------------------------------------------
 
-web=webdriver.Chrome()
+#web=webdriver.Chrome()
 
 url='https://namu.wiki/w/Project%20Zomboid/%EC%A7%81%EC%97%85'
+#직업
 
-web.get(url)
+web=requests.get(url)
 
-
+soup = BeautifulSoup(web.text, 'html.parser')
 
 #BeautifulSoup과 requests를 사용하면 먼저 URL에 요청을 보내서 응답 객체를 얻은 다음, 그 응답 객체의 텍스트 내용을 접근해야 합니다.
 
@@ -52,13 +53,11 @@ while True:
     
     all_of_bodt_hight= web.execute_script("return document.body.scrollHeight;")#<body>의 길이 즉 전체 길이를 확인하기 위한것
 
-    job_elements = web.find_elements(By.CSS_SELECTOR, "_2It+ncon")
+#    job_elements = web.find_elements(By.CSS_SELECTOR, "_2It+ncon")
 
-    if job_elements is None:
-        print("없어")
-    else:
-        print(job_elements)
-        titttle_주소.append(job_elements)
+    icon=soup.find_all('a',class_="_2It+ncon")
+    print(icon)    
+
 
     if all_of_bodt_hight<=get_screen_height * i:
         break
