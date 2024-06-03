@@ -1,5 +1,9 @@
 #직업
 #주소=https://namu.wiki/w/Project%20Zomboid/%EC%A7%81%EC%97%85
+#1번= 직업 이름
+#2번=간단한 설명을 내가 요약하기
+#3번장단점을 하이라이트 된 부분만 가져오기+설명이 이걸로 부족한경우 약간의 설명으로 추가
+#4번=옆의 사진그자체를 가져오거나 정보를 추출하기
 #스킬
 #주소=https://namu.wiki/w/Project%20Zomboid/%EC%8A%A4%ED%82%AC
 #특성
@@ -63,6 +67,3 @@ while True:
 
 
 web.quit()
-
-print("내가 추가했다")
-
