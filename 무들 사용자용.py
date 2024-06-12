@@ -4,7 +4,7 @@ import matplotlib.image as mpimg
 def 노가다(user_import, a, b):
     if user_import == a:
         # 이미지 파일 읽기
-        img = mpimg.imread(f'images_1/img_{b}.png')
+        img = mpimg.imread(f'무들_이미지/img_{b}.png')
 
         # 이미지 표시
         plt.imshow(img)
