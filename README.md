@@ -6,8 +6,7 @@
 
 <만약 안될때>
 무들 가져오기에서 12번째 elements = driver.find_elements(By.CLASS_NAME, '_3mcaeaj8') 여시에서 _3mcaeaj8 이부분을 바꾸주시고 실행하셔야합니다
-![Uploading image.png…]()
-
+![image](https://github.com/miasanmia1027/Project-Zomboid/assets/151910542/dcbd72c0-ea8d-4951-9d60-2f3743bef7dd)
 
 이부분에![image](https://github.com/miasanmia1027/Project-Zomboid/assets/151910542/11052f91-63b7-466c-9da0-dfaa918dab3e)겨시 즉 lUtIunKu이것으로 수정해야합니다.
 그리고 실행하면 이미지를 크롤링 하게 됩니다. 
