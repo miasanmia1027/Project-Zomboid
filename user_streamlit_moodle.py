@@ -1,15 +1,15 @@
 import streamlit as st
-import matplotlib.pyplot as plt
-import matplotlib.image as mpimg
+from PIL import Image
 
 # 노가다 함수 정의
 def 노가다(user_import, a, b):
     if user_import == a:
         # 이미지 파일 읽기
-        img = mpimg.imread(f'무들_이미지/img_{b}.png')
+        img = Image.open(f'무들_이미지/img_{b}.png')
 
         # 이미지 표시
         st.image(img, caption=f"{a}", use_container_width=True)
+
 
 # Streamlit 앱 시작
 st.title("무들 상태 정보 뷰어")
