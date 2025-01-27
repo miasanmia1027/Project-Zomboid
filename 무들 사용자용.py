@@ -118,7 +118,7 @@ while True:
     노가다(user_import,"피곤함",33)
     노가다(user_import,"졸림",33)
     노가다(user_import,"심한 졸림",33)
-    노가다(user_import,"비몽사봉",33)
+    노가다(user_import,"비몽사몽",33)
     노가다(user_import,"졸림 목록",33)
     노가다(user_import,"피곤함 목록",33)
     노가다(user_import,"불행함",34)
